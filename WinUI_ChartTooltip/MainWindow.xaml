@@ -1,0 +1,47 @@
+﻿<Window
+    x:Class="WinUI_ChartTooltip.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WinUI_ChartTooltip"
+    xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid>
+        <chart:SfCartesianChart Header="Population Growth">
+            <chart:SfCartesianChart.DataContext>
+                <local:ViewModel/>
+            </chart:SfCartesianChart.DataContext>
+
+            <chart:SfCartesianChart.Resources>
+                <ResourceDictionary>
+                    <DataTemplate x:Key="tooltipTemplate">
+                        <StackPanel Orientation="Horizontal">
+                            <!--Template element has DataContext as its Segment named Item. From it, you can access the correponding Model-->
+                            <TextBlock  FontFamily="Segoe UI" Foreground="White">
+                               <Run Text="{Binding Item.Country}"/>
+                               <Run Text=":"/>  
+                               <Run Text="{Binding Item.Population}"/>
+                            </TextBlock>
+                        </StackPanel>
+                    </DataTemplate>
+                </ResourceDictionary>
+            </chart:SfCartesianChart.Resources>
+
+            <chart:SfCartesianChart.XAxes>
+                <chart:CategoryAxis/>
+            </chart:SfCartesianChart.XAxes>
+
+            <chart:SfCartesianChart.YAxes>
+                <chart:NumericalAxis/>
+            </chart:SfCartesianChart.YAxes>
+
+            <chart:ColumnSeries ItemsSource="{Binding Data}"
+                                XBindingPath="Country" YBindingPath="Population"
+                                ShowTooltip="True"
+                                TooltipTemplate="{StaticResource tooltipTemplate}">
+            </chart:ColumnSeries>
+        </chart:SfCartesianChart>
+    </Grid>
+</Window>
