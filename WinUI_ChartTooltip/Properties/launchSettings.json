@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "WinUI_ChartTooltip (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "WinUI_ChartTooltip (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
