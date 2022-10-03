@@ -40,7 +40,7 @@ Here, display both country's name and population details in the tooltip. By defa
 
 ## Output:
 
-![Tooltip with more data in WinUI chart]()
+![Tooltip with more data in WinUI chart](WinUI_Chart_Tooltip_Mutiple_Values.gif)
 
 KB article - [How to display more data in the tooltip in WinUI charts?]()
 
