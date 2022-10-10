@@ -1,4 +1,4 @@
-# How to display more data in the tooltip in WinUI charts(SfCartesianChart)
+# How to display more data in the tooltip in WinUI Chart(SfCartesianChart)
 
 [WinUI Chart](https://www.syncfusion.com/winui-controls/charts) provides the support to display the needed information from its model of populated items source along with the Tooltip UI customization with the help of the [TooltipTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_TooltipTemplate) in the chart series as shown in the following code example. 
 
