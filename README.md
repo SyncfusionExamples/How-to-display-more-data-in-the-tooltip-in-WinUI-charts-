@@ -1,4 +1,4 @@
-# How to display more data in the tooltip in WinUI charts(SfCartesianChart)
+# How to display more data in the tooltip in WinUI Chart (SfCartesianChart)
 
 [WinUI Chart](https://www.syncfusion.com/winui-controls/charts) provides the support to display the needed information from its model of populated items source along with the Tooltip UI customization with the help of the [TooltipTemplate](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Charts.ChartSeriesBase.html#Syncfusion_UI_Xaml_Charts_ChartSeriesBase_TooltipTemplate) in the chart series as shown in the following code example. 
 
@@ -44,7 +44,7 @@ Here, display both country's name and population details in the tooltip. By defa
 
 ![Tooltip with more data in WinUI chart](WinUI_Chart_Tooltip_Mutiple_Values.gif)
 
-KB article - [How to display more data in the tooltip in WinUI charts?](https://www.syncfusion.com/kb/13662/how-to-display-more-data-in-the-tooltip-in-winui-chart-sfcartesianchart)
+KB article - [How to display more data in the tooltip in WinUI Chart (SfCartesianChart)?](https://www.syncfusion.com/kb/13662/how-to-display-more-data-in-the-tooltip-in-winui-chart-sfcartesianchart)
 
 ## See also
 
