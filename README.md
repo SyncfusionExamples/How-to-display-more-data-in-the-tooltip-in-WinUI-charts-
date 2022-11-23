@@ -34,7 +34,7 @@ Here, display both country's name and population details in the tooltip. By defa
 
     <chart:ColumnSeries ItemsSource="{Binding Data}"
                         XBindingPath="Country" YBindingPath="Population"
-                        ShowTooltip="True"
+                        EnableTooltip="True"
                         TooltipTemplate="{StaticResource tooltipTemplate}">
     </chart:ColumnSeries>
 </chart:SfCartesianChart>
