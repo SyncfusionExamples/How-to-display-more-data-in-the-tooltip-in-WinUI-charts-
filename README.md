@@ -4,6 +4,8 @@
 
 Here, display both country's name and population details in the tooltip. By default, it shows the corresponding y-axis value of that segment.
 
+**XAML**
+
 ```
 <chart:SfCartesianChart Header="Population Growth">
     <chart:SfCartesianChart.DataContext>
